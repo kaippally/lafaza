@@ -1,0 +1,21 @@
+node_modules/
+client/dist/
+dist/
+
+# generated: rebuilt by `npm run build-db`
+data/sarf.db
+data/sarf.db-shm
+data/sarf.db-wal
+
+# cached TTS audio
+data/tts/
+
+# secrets
+.env
+.env.local
+
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,37 @@
+{
+  "name": "sarf",
+  "version": "0.1.0",
+  "description": "Crosses every Arabic triliteral root against every morphological pattern to surface the words that are grammatically legal but have no referent yet — the slots waiting for something to be invented.",
+  "keywords": [
+    "arabic",
+    "morphology",
+    "linguistics",
+    "sarf",
+    "triliteral-root",
+    "word-formation",
+    "neologism",
+    "computational-linguistics"
+  ],
+  "homepage": "https://github.com/kaippally/sarf#readme",
+  "bugs": { "url": "https://github.com/kaippally/sarf/issues" },
+  "repository": { "type": "git", "url": "https://github.com/kaippally/sarf.git" },
+  "author": "Nishad Kaippally <kaippsCafe@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "build-db": "node --experimental-sqlite src/build.js",
+    "server": "node --experimental-sqlite src/index.js",
+    "import-wordlist": "node --experimental-sqlite src/importWordlist.js",
+    "client": "npm --prefix client run dev",
+    "dev": "npm run build-db && concurrently -n api,web -c cyan,magenta \"npm run server\" \"npm run client\"",
+    "setup": "npm install && npm --prefix client install && npm run build-db"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
