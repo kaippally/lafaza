@@ -5,6 +5,7 @@ import Matrix from './views/Matrix.jsx';
 import Roots from './views/Roots.jsx';
 import Search from './views/Search.jsx';
 import Precedents from './views/Precedents.jsx';
+import About from './views/About.jsx';
 import Legend from './Legend.jsx';
 
 const TABS = [
@@ -13,6 +14,7 @@ const TABS = [
   ['matrix', 'Matrix'],
   ['roots', 'Roots'],
   ['search', 'Search'],
+  ['about', 'About'],
 ];
 
 const STATS = [
@@ -134,12 +136,13 @@ export default function App() {
       </header>
 
       <main>
-        <Legend />
+        {tab !== 'about' && <Legend />}
         {tab === 'vacant' && <Vacant stats={stats} />}
         {tab === 'precedents' && <Precedents />}
         {tab === 'matrix' && <Matrix stats={stats} />}
         {tab === 'roots' && <Roots />}
         {tab === 'search' && <Search />}
+        {tab === 'about' && <About />}
       </main>
     </>
   );
