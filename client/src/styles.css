@@ -34,6 +34,7 @@ header { border-bottom: 1px solid var(--line); background: var(--panel); padding
 .brand { flex: 1 1 460px; min-width: 0; }
 .brand h1 { margin: 0; font-size: 19px; font-weight: 600; }
 .brand h1 span { color: var(--gold); }
+.brand h1 .brandar { font-size: 23px; margin-left: 2px; }
 .brand p { margin: 3px 0 0; color: var(--dim); font-size: 12.5px; line-height: 1.5; max-width: 88ch; }
 
 .stats { display: flex; gap: 20px; flex-wrap: wrap; flex: 0 0 auto; padding-top: 2px; }

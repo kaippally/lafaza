@@ -172,4 +172,4 @@ app.get('/api/search', (req, res) => {
   `).all(...args));
 });
 
-app.listen(PORT, () => console.log(`sarf api  http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`lafaza api  http://localhost:${PORT}`));

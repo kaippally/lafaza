@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
-export const DB_PATH = join(here, '..', 'data', 'sarf.db');
+export const DB_PATH = join(here, '..', 'data', 'lafaza.db');
 
 export function open() {
   mkdirSync(dirname(DB_PATH), { recursive: true });

@@ -1,7 +1,7 @@
 {
-  "name": "sarf-client",
+  "name": "lafaza-client",
   "version": "0.1.0",
-  "description": "React client for Sarf — the waiting words",
+  "description": "React client for Lafaza — the waiting words",
   "author": "Nishad Kaippally <kaippsCafe@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -13,8 +13,7 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sarf": "file:.."
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

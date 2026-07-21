@@ -1,7 +1,7 @@
 {
-  "name": "sarf",
+  "name": "lafaza",
   "version": "0.1.0",
-  "description": "Crosses every Arabic triliteral root against every morphological pattern to surface the words that are grammatically legal but have no referent yet — the slots waiting for something to be invented.",
+  "description": "لَفّاظة — crosses every Arabic triliteral root against every morphological pattern to surface the words that are grammatically legal but have no referent yet: the slots waiting for something to be invented.",
   "keywords": [
     "arabic",
     "morphology",
@@ -12,9 +12,9 @@
     "neologism",
     "computational-linguistics"
   ],
-  "homepage": "https://github.com/kaippally/sarf#readme",
-  "bugs": { "url": "https://github.com/kaippally/sarf/issues" },
-  "repository": { "type": "git", "url": "https://github.com/kaippally/sarf.git" },
+  "homepage": "https://github.com/kaippally/lafaza#readme",
+  "bugs": { "url": "https://github.com/kaippally/lafaza/issues" },
+  "repository": { "type": "git", "url": "https://github.com/kaippally/lafaza.git" },
   "author": "Nishad Kaippally <kaippsCafe@gmail.com>",
   "license": "MIT",
   "private": false,

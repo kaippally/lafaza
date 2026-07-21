@@ -3,9 +3,9 @@ client/dist/
 dist/
 
 # generated: rebuilt by `npm run build-db`
-data/sarf.db
-data/sarf.db-shm
-data/sarf.db-wal
+data/lafaza.db
+data/lafaza.db-shm
+data/lafaza.db-wal
 
 # cached TTS audio
 data/tts/

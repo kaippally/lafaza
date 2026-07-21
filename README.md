@@ -1,4 +1,4 @@
-# Sarf — the waiting words
+# لَفّاظة · Lafaza — the waiting words
 
 ![license](https://img.shields.io/badge/license-MIT-blue) ![node](https://img.shields.io/badge/node-%E2%89%A522.5-brightgreen)
 
@@ -11,13 +11,24 @@ Qur'an meaning *caravan* centuries before the automobile. The slot pre-exists th
 For each vacant slot the app projects what the word *would* mean, from the root's semantics
 crossed with the pattern's function, and scores how coinable it is.
 
+### The name
+
+**لَفّاظة** (*laffāẓa*) is one of the app's own vacant slots: root **ل-ف-ظ** “to utter” in the
+machine pattern **فَعّالة** — the same derivation as غَسّالة (washing machine) and طَيّارة
+(aircraft). It means *a machine that utters*, and it was an empty cell in this very matrix until
+the project needed a name.
+
+It is also a small joke on the discipline. **لَفْظ** is the classical term for a word as *pure
+form*, set against **مَعْنى**, its meaning. This program manufactures لفظ without معنى —
+well-formed shells waiting for referents.
+
 ## Run
 
 Requires **Node 22.5+** (uses the built-in `node:sqlite`, so there is no native module to rebuild).
 
 ```
-git clone https://github.com/kaippally/sarf.git
-cd sarf
+git clone https://github.com/kaippally/lafaza.git
+cd lafaza
 npm run setup     # installs server + client deps, builds the database
 npm run dev       # api on :4030, client on :5190
 ```
@@ -121,8 +132,8 @@ templates would emit false forms. Only sound triliteral roots are generated.
 
 ```
 src/morph.js            template application, diacritic stripping, phonotactics, English inflection
-src/seed/patterns.js    60 patterns: template, function, semantic frame, productivity, affinity
-src/seed/roots.js       163 sound roots with English sense + semantic field
+src/seed/patterns.js    62 patterns: template, function, semantic frame, productivity, affinity
+src/seed/roots.js       184 roots (sound + hollow) with English sense + semantic field
 src/seed/lexicon.js     hand-checked attested forms (the attestation oracle)
 src/seed/coined.js      21 curated precedents — rocket, train, computer, library, airplane…
 src/build.js            generates root × pattern, checks attestation, scores
@@ -137,9 +148,9 @@ client/                 React + Vite on :5190
 | `/api/stats` | counts, semantic fields, pattern categories |
 | `/api/vacant?field=&category=&minScore=&limit=` | the waiting words, best first |
 | `/api/coined` | the curated precedents, with segmentation |
-| `/api/tts?text=` | Google TTS mp3, cached; 501 if no key |
-| `/api/matrix?category=` | root × pattern grid |
-| `/api/roots`, `/api/root/:id` | all 60 forms of one root |
+| `/api/tts?text=` | Arabic pronunciation as mp3, cached to disk |
+| `/api/matrix?category=` | root × pattern grid; `category=all` for every pattern |
+| `/api/roots`, `/api/root/:id` | every generated form of one root |
 | `/api/search?q=&ctx=&status=` | `q` = Arabic form (diacritics ignored); `ctx` = free-text meaning, matched against the projected gloss, the root's English senses, the pattern function and the semantic field |
 
 ## Contributing

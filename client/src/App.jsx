@@ -97,12 +97,14 @@ export default function App() {
       <header>
         <div className="hrow">
           <div className="brand">
-            <h1>Sarf <span>— the waiting words</span></h1>
+            <h1><span className="ar brandar">لَفّاظة</span> Lafaza <span>— the waiting words</span></h1>
             <p>
               Every Arabic triliteral root crossed with every morphological pattern. Cells that
               already carry a meaning are the language as it stands; cells that are grammatically
               legal but carry no referent are slots waiting for something to be invented — the way
               <span className="ar"> سَيَّارة </span> sat unclaimed as “caravan” until the automobile.
+              The name is one of them: <span className="ar">لَفّاظة</span>, “a machine that utters”,
+              was itself an empty slot until this app needed naming.
             </p>
           </div>
 
